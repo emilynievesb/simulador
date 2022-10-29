@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tiro semiparabólico</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column1" id="column1">
+        <!-- <div id="edificio"></div> -->
+        <!-- <div id="ball"></div> -->
+        <div class="mar">
+          <img src="nene.png" width="100%" alt="" />
+        </div>
+      </div>
+
+      <div class="column2">
+        <h1>Simulador caída libre</h1>
+
+        <h2>Ingresa tus datos aquí:</h2>
+
+        <div class="container-form">
+          <form action="" class="form">
+            <label for="altura">Ingresa una altura entre 1 y 10 [m]</label>
+            <input type="range" min="0" max="10" value="0" id="inputAltura" />
+            <p id="altura"></p>
+            <label for="resultadoAltura">Velocidad</label><br />
+            <input
+              type="number"
+              style="height: 2rem"
+              name="result"
+              id="result1"
+              readonly
+            />
+            m/s<br />
+
+            <label for="time">Tiempo</label><br />
+
+            <input type="number" style="height: 2rem" id="result2" readonly /> s
+            <br />
+            <button id="simulador">Ir a la simulación</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
